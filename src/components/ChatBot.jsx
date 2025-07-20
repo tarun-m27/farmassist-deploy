@@ -79,7 +79,7 @@ const ChatBot = ({ isDarkMode, setDarkMode }) => {
     setUserInput("");
 
     try {
-      const response = await axios.post("http://localhost:8000/api/chat", {
+      const response = await axios.post("https://farmassist-backend.onrender.com/api/chat", {
         question: userInput,
       });
      
